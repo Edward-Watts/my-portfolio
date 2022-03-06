@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="mt-3">
+    <strong>Relevant Skills:</strong>
     <div class="d-flex mb-3" style="flex-wrap: wrap;">
         <div 
             class="stack px-4 py-2"
@@ -78,7 +79,7 @@ export default {
   border-radius: 5px;
 }
 .stack:hover {
-  background: #00e7e7;
+  background: #0dcaf0;
   transition: 0.4s all ease;
   cursor: pointer;
 }

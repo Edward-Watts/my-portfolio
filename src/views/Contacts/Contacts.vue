@@ -17,7 +17,7 @@
               <!-- <p>
                 Call me: +233 (0) 54 662 0587
               </p> -->
-              <b-btn variant="success" href="mailto:eddiewattsadjei@gmail.com" class="py-2 px-5">
+              <b-btn pill variant="success" href="mailto:eddiewattsadjei@gmail.com" class="mt-3 py-2 px-5">
                 Send a message
               </b-btn>
               <Social />
@@ -36,16 +36,21 @@
         </div>
       </div>
     </section>  
+    <div class="footer d-flex justify-content-center align-items-center">
+    <Footer />
+    </div>
   </div>  
 </template>
 
 <script>
 import Social from '../../components/social-media.vue'
+import Footer from '../../components/footer.vue'
 
 export default {
     name: 'Contacts',
     components: {
-        Social
+        Social,
+        Footer
     },
     data () {
       return {
@@ -56,14 +61,18 @@ export default {
 </script>
 
 <style scoped>
+* {
+    margin: 0
+}
  #lets-talk {
-    background: rgb(24, 23, 23);
+    background: #202020;
+    min-height: 100vh;
   }
 .title-sec {
     position: relative;
     text-align: left;
     font-weight: 800;
     font-size: 4rem;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
   }
 </style>

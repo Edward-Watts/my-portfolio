@@ -1,7 +1,7 @@
 let stacks =[
     {
         name: 'React JS',
-        logo: 'react-js.png',
+        logo: 'react.png',
         info: 'React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components.'
     },
     {
@@ -11,7 +11,7 @@ let stacks =[
     },
     {
         name: 'Vue JS',
-        logo: 'vue-js.png',
+        logo: 'vue.png',
         info: ''
     },
     {
@@ -21,7 +21,7 @@ let stacks =[
     },
     {
         name: 'Easy Peasy',
-        logo: 'easy-peasy.png',
+        logo: 'easypeasy.png',
         info: ''
     },
     {
@@ -30,8 +30,18 @@ let stacks =[
         info: ''
     },
     {
+        name: 'HTML5',
+        logo: 'html.png',
+        info: ''
+    },
+    {
+        name: 'CSS3',
+        logo: 'css.png',
+        info: ''
+    },
+    {
         name: 'Bootstrap Vue',
-        logo: 'bootstrap-vue.png',
+        logo: 'bootstrapvue.png',
         info: ''
     },
     {
@@ -40,18 +50,23 @@ let stacks =[
         info: ''
     },
     {
-        name: 'HTML5',
-        logo: 'html5.png',
-        info: ''
-    },
-    {
-        name: 'CSS3',
-        logo: 'css3.png',
-        info: ''
-    },
-    {
         name: 'Sass',
         logo: 'sass.png',
+        info: ''
+    },
+    {
+        name: 'Adobe XD',
+        logo: 'xd.png',
+        info: ''
+    },
+    {
+        name: 'Figma',
+        logo: 'figma.png',
+        info: ''
+    },
+    {
+        name: 'Photoshop',
+        logo: 'photoshop.png',
         info: ''
     }
 ]
