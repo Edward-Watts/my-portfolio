@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section id="home" class="section d-flex justify-content-center align-items-center">
-      <div class="row mt-5">
-        <div class="title">
+    <section id="home" class="section">
+      <div class="row pt-5">
+        <div class="title mt-5">
           <div class="col-12">Hi, I'm <span style="color: #0dcaf0;">Eddie Watts</span></div>
         </div>
         <div class="subtitle">
@@ -11,7 +11,7 @@
         <div class="col-12 d-flex justify-content-center align-items-center">
           <b-btn 
           variant="outline-info"
-          href="/contacts"  
+          href="#contacts"  
           pill 
           class="py-2 px-5 mt-5">
             Contact me!
@@ -20,8 +20,8 @@
         <div class="col-12 d-flex justify-content-center align-items-center mt-2">
           <b-btn 
           variant="outline-light" 
-          href="../../assets/resume/Edward Watts CV.pdf" 
-          download="Edward Watts CV.pdf" 
+          href="../../assets/resume/Edward-Watts-CV.pdf"
+          target="blank"  
           pill 
           class="py-2 px-5">
             Download CV
@@ -32,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="section d-flex align-items-center justify-content-center">
+    <section id="about" class="section">
       <div class="row my-5 px-5">
         <div class="col-12 col-lg-6 d-flex align-items-center">
           <div class="reveal" >
@@ -49,7 +49,7 @@
                 new ways to get better.
               </p>
               <p>
-                <b-link href="/about" style="text-decoration: none; color: #0dcaf0">Get to know more</b-link>
+                Resourceful, a problem solver, collaborative and caring employee. I love music, movies and cooking. 
               </p>
             </div>
             <Stack />
@@ -61,34 +61,39 @@
       </div>
     </section>
     <section id="works" class="section align-items-center justify-content-flex-start">
-      <div class="row mt-5 px-5">
+      <div class="row mt-5 pt-3 px-5">
         <div class="col-12 col-lg-6">
           <div class="reveal">
             <div class="title-sec" style="color: #0dcaf0;">What I do.</div>
             <div class="text"> 
               <p>
-                Here are some presentation of my projects (design and actual code) to explore. Don't hesitate to send in your 
-                <b-link href="/contacts" style="text-decoration: none; color: #0dcaf0;">comments</b-link>. Interested to see more?
-                Click <b-link href="/projects" style="text-decoration: none; color: #0dcaf0;">here</b-link>.
+                Here are some presentation of my projects (WebApps, UI Designs and Graphic Designs respectively) to explore. 
+                Don't hesitate to send in your <b-link href="/contacts" style="text-decoration: none; color: #0dcaf0;">comments</b-link>. 
               </p>
             </div>
           </div>
         </div>
       </div>
       <div class="row my-3 px-5">
-        <div class="col-12 mt-3 d-flex justify-content-center align-items-center">
+        <div class="pic-container col-12 mt-3 d-flex justify-content-flex-start align-items-center" style="z-index: 1;">
           <div 
-          v-for="work in works"
-          :key="work.name">
-            <div class="pic col-12 col-md-4 mx-3" style="z-index: 1;">
-              
-            </div>
+          class="pic webapp col-12 col-md-4 mx-3 d-flex justify-content-center align-items-center"
+          @click="$router.push('/works/webapps')">
+             
+          </div>
+          <div class="pic ui col-12 col-md-4 mx-3 d-flex justify-content-center align-items-center"
+          @click="$router.push('/works/user-interface')">
+             
+          </div>
+          <div class="pic flyer col-12 col-md-4 mx-3 d-flex justify-content-center align-items-center"
+          @click="$router.push('/works/flyers&logos')">
+             
           </div>
         </div>
       </div>
     </section>
-    <section id="lets-talk" class="section d-flex justify-content-center align-items-center">
-      <div class="row my-5 px-5">
+    <section id="contacts" class="section">
+      <div class="row my-1 px-5">
         <div class="col-12 col-lg-6 d-block align-self-center">
           <div class="reveal">
             <div class="title-sec">let's talk!</div>
@@ -101,9 +106,6 @@
               <p>
                 I will love to hear from you!
               </p>
-              <!-- <p>
-                Call me: +233 (0) 54 662 0587
-              </p> -->
               <b-btn 
               variant="success" 
               href="mailto:eddiewattsadjei@gmail.com" 
@@ -119,7 +121,7 @@
           <iframe 
           src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3706.469339778247!2d-0.2510521066813808!3d5.677670979659226!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfdf9ef072d5fcdf%3A0xc2923be80cf3ba0b!2sKwabenya!3m2!1d5.6786107999999995!2d-0.2521888!5e0!3m2!1sen!2sgh!4v1645963274293!5m2!1sen!2sgh" 
           width="100%" 
-          height="400px" 
+          height="500px" 
           style="border-radius:0.25rem;" 
           allowfullscreen="" 
           loading="lazy">
@@ -147,17 +149,7 @@
     },
     data () {
       return {
-        works: [
-          {name: 'webapps',
-           description: ''
-          },
-          {name: 'ui',
-           description: ''
-          },
-          {name: 'flyers',
-           description: ''
-          } 
-        ]
+        
       }
     },
 
@@ -187,7 +179,7 @@
             reveals[i].classList.remove("active");
           }
         }
-      },
+      }
     }
   }
 </script>
@@ -196,9 +188,12 @@
 * {
     margin: 0;
   }
+  p {
+     margin-bottom: 10px;
+  }
   .section {
     display: block;
-   
+    min-height: 100vh;
   }
   .title {
     position: relative;
@@ -222,19 +217,68 @@
     font-weight: 400;
     font-size: 2.5rem;
   }
+
+  .pic-container {
+    overflow-x: scroll;
+    background: #202020;
+  }
   
   .pic {
-    background: #000;
     height:350px;
     width: 350px;
     border-radius: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.4s all ease;
+  }
+
+  .pic:hover {
+     opacity: 100%;
+     transition: 0.4s all ease;
+     background-size: 115%;
+     background-position: center;
+  }
+  .pic:hover:before { 
+    content: "View More";
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #202020;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+
+  .pics {
+    width: 100%;
+
+  }
+  .webapp {
+    background-image: url(../../assets/illustrations/budgety.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .ui {
+    background-image: url(../../assets/illustrations/papa.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .flyer {
+    background-image: url(../../assets/illustrations/reg-con.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
   }
 
   #home {
     background-image: url(../../assets/background/setup01.png);
     background-size: cover;
-    min-height: 100vh;
   }
   #about {
     background: #202020;
@@ -242,7 +286,7 @@
   #works {
     background: #202020;
   }
-  #lets-talk {
+  #contacts {
     background: #202020;
   }
   .footer {

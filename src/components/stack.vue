@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import stacks from '../utils/sample-data'
+import stacks from '../utils/stacks'
 export default {
     name: 'Stack',
     components: {

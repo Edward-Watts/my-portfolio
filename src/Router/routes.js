@@ -7,24 +7,14 @@ export default [
         component: () => import('@/views/Home/Home.vue')
     },
     {
-        path: '/home',
-        name: 'Home',
-        component: () => import('@/views/Home/Home.vue')
+        path: '/works/flyers&logos',
+        name: 'Flyers',
+        component: () => import('@/views/Works/Flyers/Flyers.vue')
     },
     {
-        path: '/about',
-        name: 'About',
-        component: () => import('@/views/About/About.vue')
-    },
-    {
-        path: '/projects',
-        name: 'Projects',
-        component: () => import('@/views/Projects/Projects.vue')
-    },
-    {
-        path: '/contacts',
-        name: 'Contacts',
-        component: () => import('@/views/Contacts/Contacts.vue')
+        path: '/works/user-interface',
+        name: 'User-Interface',
+        component: () => import('@/views/Works/UI/UI.vue')
     }
     // {
     //     path: '/blog',

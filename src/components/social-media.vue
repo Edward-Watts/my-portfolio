@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-none d-md-flex justify-content-flex-start align-items-center mt-5">
+    <div class="d-flex justify-content-flex-start align-items-center mt-5">
         <b-link 
         href="https://www.linkedin.com/in/edward-watts-adjei/" target="blank">
         <div class="social" id="linkedin" v-b-tooltip.hover title="LinkedIn"></div></b-link>
@@ -8,7 +8,7 @@
         <div class="social" id="github" v-b-tooltip.hover title="GitHub"></div></b-link>
         <b-link href="https://dribbble.com/Eddie_Watts" target="blank">
         <div class="social" id="dribbble" v-b-tooltip.hover title="Dribbble"></div></b-link>
-        <b-link href="#" target="blank">
+        <b-link href="https://www.instagram.com/edwardwattsadjei/" target="blank">
         <div class="social" id="instagram" v-b-tooltip.hover title="Instagram"></div></b-link>
     </div>  
   </div>  
