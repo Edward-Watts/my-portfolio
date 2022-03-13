@@ -1,26 +1,20 @@
 <template>
   <div class="nav-container">  
-    <b-navbar class="p-0" toggleable type="dark" variant="dark">
+    <b-navbar class="py-0 px-2" toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand href="#home" class="p-0 w-10">
         <img src="../../assets/logo/eddie-watts.png" style="width: 60px; margin-left:10px;" alt="Eddie-Codo">
       </b-navbar-brand>
 
-      <b-navbar-toggle target="navbar-toggle-collapse" style="margin-right: 10px;">
-        <template #default="{ expanded }">
-          <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-          <b-icon v-else icon="chevron-bar-down"></b-icon>
-        </template>
-      </b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="navbar-toggle-collapse" is-nav>
-        <!-- Right aligned nav items -->
-          <b-navbar-nav class="align-items-center">
-            <b-nav-item class="mb-2" href="#home">Home</b-nav-item>
-            <b-nav-item class="mb-2" href="#about">About</b-nav-item>
-            <b-nav-item class="mb-2" href="#works">Works</b-nav-item>
-            <b-nav-item class="mb-2" href="#contacts">Contacts</b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
+      <b-collapse id="nav-collapse" is-nav class="mr-2 justify-content-end">
+        <b-navbar-nav>
+          <b-nav-item class="mx-2" href="#home">Home</b-nav-item>
+          <b-nav-item class="mx-2" href="#about">About</b-nav-item>
+          <b-nav-item class="mx-2" href="#works">Works</b-nav-item>
+          <b-nav-item class="mx-2" href="#contacts">Contacts</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
     </b-navbar>
   </div>  
 </template>
@@ -41,7 +35,7 @@ export default {
 
 <style scoped>
 .nav-container {
-  position: sticky;
+  position: fixed;
   opacity: 98%; 
   top: 0; 
   width: 100%;

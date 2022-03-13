@@ -18,23 +18,26 @@
         <div 
             class="designs mx-2"
             v-for="flyer in flyers" :key="flyer.name">
-          <img :src="require('../../../assets/designs/flyers/' + flyer.photo)" />
+          <img :src="require('../assets/designs/flyers/' + flyer.photo)" />
         </div>
         <div 
             class="designs mx-2"
             v-for="logo in logos" :key="logo.name">
-          <img :src="require('../../../assets/designs/logos/' + logo.photo)" />
+          <img :src="require('../assets/designs/logos/' + logo.photo)" />
         </div>
     </div> 
   </div>  
 </template>
 
 <script>
-import * as data from '../../../utils/designs'
+import * as data from '../utils/designs'
 export default {
-    name: 'Flyers',
+    name: 'Works',
     components: {
 
+    },
+    props: {
+      data: Object
     },
     data () {
       return {
@@ -48,6 +51,9 @@ export default {
     methods: {
       showToast () {
         this.$toast.info('Please scroll down')
+        console.log(this.data)
+        console.log(this.flyers)
+        console.log(this.logos)
       }
     } 
 }

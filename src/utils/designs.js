@@ -68,7 +68,7 @@ export let logos =[
         info: ''
     },
     {
-        name: 'AssistCon',
+        name: 'AssistCon Logo',
         photo: 'assistcon.png',
         info: ''
     },
@@ -78,7 +78,7 @@ export let logos =[
         info: ''
     },
     {
-        name: 'GH-frantoma',
+        name: 'GH-frantoma Logo',
         photo: 'gh-frantoma.png',
         info: ''
     },

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="home" class="section">
+    <section id="home" class="section pt-5">
       <div class="row pt-5">
         <div class="title mt-5">
           <div class="col-12">Hi, I'm <span style="color: #0dcaf0;">Eddie Watts</span></div>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="section">
+    <section id="about" class="section pt-5">
       <div class="row my-5 px-5">
         <div class="col-12 col-lg-6 d-flex align-items-center">
           <div class="reveal" >
@@ -60,7 +60,7 @@
         </div>
       </div>
     </section>
-    <section id="works" class="section align-items-center justify-content-flex-start">
+    <section id="works" class="section pt-5 align-items-center justify-content-flex-start">
       <div class="row mt-5 pt-3 px-5">
         <div class="col-12 col-lg-6">
           <div class="reveal">
@@ -78,21 +78,26 @@
         <div class="pic-container col-12 mt-3 d-flex justify-content-flex-start align-items-center" style="z-index: 1;">
           <div 
           class="pic webapp col-12 col-md-4 mx-3 d-flex justify-content-center align-items-center"
-          @click="$router.push('/works/webapps')">
+          @click="showWeb">
              
           </div>
           <div class="pic ui col-12 col-md-4 mx-3 d-flex justify-content-center align-items-center"
-          @click="$router.push('/works/user-interface')">
+          @click="showUI">
              
           </div>
           <div class="pic flyer col-12 col-md-4 mx-3 d-flex justify-content-center align-items-center"
-          @click="$router.push('/works/flyers&logos')">
+          @click="showFlyer">
              
           </div>
         </div>
       </div>
+
+      <div v-if="show">
+        <Works :data="data"/>
+      </div> 
+
     </section>
-    <section id="contacts" class="section">
+    <section id="contacts" class="section pt-5">
       <div class="row my-1 px-5">
         <div class="col-12 col-lg-6 d-block align-self-center">
           <div class="reveal">
@@ -139,17 +144,28 @@
   import Stack from '../../components/stack.vue'
   import Social from '../../components/social-media.vue'
   import Footer from '../../components/footer.vue'
+  import Works from '../../components/works.vue'
+  import * as data from '../../utils/designs'
 
   export default {
     name: 'Home',
     components: {
       Stack,
       Social,
-      Footer
+      Footer,
+      Works
     },
     data () {
       return {
-        
+        data: null,
+        webapp: null,
+        ui: null,
+        flyer: null,
+        show: false,
+        designs: {
+          flyers: data.flyers,
+          logos: data.logos
+        }
       }
     },
 
@@ -179,6 +195,31 @@
             reveals[i].classList.remove("active");
           }
         }
+      },
+
+      showFlyer () {
+        this.show = true
+        this.webapp = false
+        this.ui = false
+        this.flyer = true
+        if (this.flyer) {
+          this.data = this.designs
+          console.log(this.data)
+        }
+
+      },
+      showUI () {
+        this.show = true
+        this.webapp = false
+        this.ui = true
+        this.flyer = false
+
+      },
+      showWeb () {
+        this.show = true
+         this.webapp = true
+        this.ui = false
+        this.flyer = false
       }
     }
   }
@@ -190,6 +231,17 @@
   }
   p {
      margin-bottom: 10px;
+  }
+  img {
+    width: inherit;
+    border-radius: 10px;
+  }
+  .designs {
+    height:300px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: 0.4s all ease;
   }
   .section {
     display: block;
