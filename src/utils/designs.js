@@ -1,106 +1,104 @@
-export let flyers =[
+let flyers =[
     {
         name: 'My World',
-        photo: 'myworld.png',
+        photo: 'flyers/myworld.png',
         info: ''
     },
     {
         name: 'Thanksgiving',
-        photo: 'reg-con.jpg',
+        photo: 'flyers/reg-con.jpg',
         info: ''
     },
     {
         name: 'Family',
-        photo: 'family.png',
+        photo: 'flyers/family.png',
         info: ''
     },
     {
         name: 'Qinnect Pro',
-        photo: 'qinnect.jpg',
+        photo: 'flyers/qinnect.jpg',
         info: ''
     },
     {
         name: 'Music School',
-        photo: 'music.png',
+        photo: 'flyers/music.png',
         info: ''
     },
      {
         name: 'Singles Mingle',
-        photo: 'singles.jpg',
+        photo: 'flyers/singles.jpg',
         info: ''
     },
      {
         name: 'Mango Haven',
-        photo: 'justfruits.png',
+        photo: 'flyers/justfruits.png',
         info: ''
     },
     {
         name: 'Pineapple Royale',
-        photo: 'justfruits1.png',
+        photo: 'flyers/justfruits1.png',
         info: ''
     },
     {
         name: 'AssistCon',
-        photo: 'assistcon.png',
+        photo: 'flyers/assistcon.png',
         info: ''
     },
     {
         name: 'GH-frantoma',
-        photo: 'gh-frantoma.png',
+        photo: 'flyers/gh-frantoma.png',
         info: ''
     },
     {
         name: 'Tsalach',
-        photo: 'tsalach.jpg',
+        photo: 'flyers/tsalach.jpg',
         info: ''
     },
     {
         name: 'Unnlimited Solutions',
-        photo: 'unlimited.png',
+        photo: 'flyers/unlimited.png',
         info: ''
-    }
-]
-
-export let logos =[
+    },
     {
         name: 'Ackah Klodin',
-        photo: 'ackah.png',
+        photo: 'flyers/ackah.png',
         info: ''
     },
     {
         name: 'AssistCon Logo',
-        photo: 'assistcon.png',
+        photo: 'flyers/assistcon-logo.png',
         info: ''
     },
     {
         name: 'Ankin Apparel',
-        photo: 'ankin.png',
+        photo: 'flyers/ankin.png',
         info: ''
     },
     {
         name: 'GH-frantoma Logo',
-        photo: 'gh-frantoma.png',
+        photo: 'flyers/gh-frantoma-logo.png',
         info: ''
     },
     {
         name: 'Noboa Foundation',
-        photo: 'noboa.jpg',
+        photo: 'flyers/noboa.jpg',
         info: ''
     },
     {
         name: "Papa's Kitchen",
-        photo: 'papa.png',
+        photo: 'flyers/papa.png',
         info: ''
     },
     {
         name: 'TicketInn',
-        photo: 'ticketinn.png',
+        photo: 'flyers/ticketinn.png',
         info: ''
     },
     {
         name: 'Nii Photography',
-        photo: 'niiphotography.png',
+        photo: 'flyers/niiphotography.png',
         info: ''
     }
 ]
 
+export default flyers

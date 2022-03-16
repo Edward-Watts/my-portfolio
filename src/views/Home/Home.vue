@@ -93,7 +93,7 @@
       </div>
 
       <div v-if="show">
-        <Works :data="data"/>
+        <Works :data="data" :webapp="webapp" :ui="ui" :flyer="flyer" />
       </div> 
 
     </section>
@@ -101,7 +101,7 @@
       <div class="row my-1 px-5">
         <div class="col-12 col-lg-6 d-block align-self-center">
           <div class="reveal">
-            <div class="title-sec">let's talk!</div>
+            <div class="title-sec" style="color: #0dcaf0;">let's talk!</div>
             <div class="text">
               <p>
                 I'm Currently open to work and interested in a part-time, full-time and contract jobs
@@ -112,7 +112,7 @@
                 I will love to hear from you!
               </p>
               <b-btn 
-              variant="success" 
+              variant="outline-info" 
               href="mailto:eddiewattsadjei@gmail.com" 
               class="mt-3 py-2 px-5"
               pill>
@@ -145,7 +145,9 @@
   import Social from '../../components/social-media.vue'
   import Footer from '../../components/footer.vue'
   import Works from '../../components/works.vue'
-  import * as data from '../../utils/designs'
+  import flyers from '../../utils/designs'
+  import userInterfaces from '../../utils/userInterface'
+  import webapps from '../../utils/webapps'
 
   export default {
     name: 'Home',
@@ -161,11 +163,10 @@
         webapp: null,
         ui: null,
         flyer: null,
-        show: false,
-        designs: {
-          flyers: data.flyers,
-          logos: data.logos
-        }
+        show: null,
+        flyers,
+        userInterfaces,
+        webapps
       }
     },
 
@@ -203,8 +204,7 @@
         this.ui = false
         this.flyer = true
         if (this.flyer) {
-          this.data = this.designs
-          console.log(this.data)
+          this.data = this.flyers
         }
 
       },
@@ -213,13 +213,20 @@
         this.webapp = false
         this.ui = true
         this.flyer = false
-
+        if (this.ui) {
+          this.data = this.userInterfaces
+          console.log(this.data)
+        }
       },
       showWeb () {
         this.show = true
          this.webapp = true
         this.ui = false
         this.flyer = false
+        if (this.webapp) {
+          this.data = this.userInterface
+          console.log(this.data)
+        }
       }
     }
   }

@@ -1,14 +1,14 @@
 <template>
   <div>  
     <div class="py-2 text-center align-self-center">
-      <p  class="title-sec">Flyers & Logos</p>
+      <p  class="title-sec">{{ heading }}</p>
       <div>
         <p>Please visit my 
           <b-link 
-          href="https://www.instagram.com/edwardwattsadjei/"
+          :href="link"
           target="blank" 
           style="text-decoration: none; color: #0dcaf0;"> 
-          instagram 
+          {{ social }} 
           </b-link>
         page for more.
         </p>
@@ -17,43 +17,74 @@
     <div class="design-container px-4 d-flex justify-content-center align-items-center" style="flex-wrap: wrap;">
         <div 
             class="designs mx-2"
-            v-for="flyer in flyers" :key="flyer.name">
-          <img :src="require('../assets/designs/flyers/' + flyer.photo)" />
-        </div>
-        <div 
-            class="designs mx-2"
-            v-for="logo in logos" :key="logo.name">
-          <img :src="require('../assets/designs/logos/' + logo.photo)" />
+            v-for="el in data" :key="el.name">
+          <img :src="require('../assets/works/' + el.photo)" />
         </div>
     </div> 
   </div>  
 </template>
 
 <script>
-import * as data from '../utils/designs'
 export default {
     name: 'Works',
     components: {
 
     },
     props: {
-      data: Object
+      data: Array,
+      webapp: Boolean,
+      ui: Boolean,
+      flyer: Boolean
     },
     data () {
       return {
-     flyers: data.flyers,
-     logos: data.logos
     }
   },
   mounted () {
      this.showToast()
     },
+    computed: {
+      heading () {
+        if (this.flyer) {
+          return 'Flyers & Logos'
+        }
+        if (this.ui) {
+          return 'User Interface Design'
+        }
+         if (this.webapp) {
+          return 'Web Applications'
+        }
+        return ''
+      },
+      social () {
+        if (this.flyer) {
+          return 'instagram'
+        }
+        if (this.ui) {
+          return 'dribbble'
+        }
+         if (this.webapp) {
+          return 'github'
+        }
+        return ''
+      },
+      link () {
+        if (this.flyer) {
+          return 'https://www.instagram.com/edwardwattsadjei/'
+        }
+        if (this.ui) {
+          return 'https://dribbble.com/Eddie_Watts'
+        }
+         if (this.webapp) {
+          return 'https://github.com/Edward-Watts'
+        }
+        return ''
+      }
+
+    },
     methods: {
       showToast () {
         this.$toast.info('Please scroll down')
-        console.log(this.data)
-        console.log(this.flyers)
-        console.log(this.logos)
       }
     } 
 }
@@ -74,6 +105,5 @@ export default {
     width: 300px;
     margin-bottom: 20px;
     text-align: center;
-    transition: 0.4s all ease;
   }
 </style>
