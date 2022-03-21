@@ -20,7 +20,8 @@
         <div class="col-12 d-flex justify-content-center align-items-center mt-2">
           <b-btn 
           variant="outline-light" 
-          href="../../assets/resume/Edward-Watts-CV.pdf"
+          href="/Edward-Watts-CV.pdf"
+          download="Edward-Watts-CV.pdf"
           target="blank"  
           pill 
           class="py-2 px-5">
@@ -36,7 +37,7 @@
       <div class="row my-5 px-5">
         <div class="col-12 col-lg-6 d-flex align-items-center">
           <div class="reveal" >
-            <div class="title-sec" style="color: #0dcaf0;">who I am.</div>
+            <div class="title-sec" style="color: #0dcaf0;">Who I am.</div>
             <div class="text">
               <p>
                 As a design ethusiast my interest for web development began during and on completion of my first project  
@@ -101,7 +102,7 @@
       <div class="row my-1 px-5">
         <div class="col-12 col-lg-6 d-block align-self-center">
           <div class="reveal">
-            <div class="title-sec" style="color: #0dcaf0;">let's talk!</div>
+            <div class="title-sec" style="color: #0dcaf0;">Let's talk!</div>
             <div class="text">
               <p>
                 I'm Currently open to work and interested in a part-time, full-time and contract jobs
@@ -224,8 +225,7 @@
         this.ui = false
         this.flyer = false
         if (this.webapp) {
-          this.data = this.userInterface
-          console.log(this.data)
+          this.data = this.webapps
         }
       }
     }

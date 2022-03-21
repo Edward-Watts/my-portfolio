@@ -43,7 +43,7 @@ export default {
             case 'Easy Peasy' : 
             message = info
             break;
-            case 'Javascript' : 
+            case 'JavaScript' : 
             message = info
             break;
             case 'Bootstrap Vue' : 
@@ -59,6 +59,15 @@ export default {
             message = info
             break;
             case 'Sass' : 
+            message = info
+            break;
+            case 'Adobe XD' : 
+            message = info
+            break;
+            case 'Figma' : 
+            message = info
+            break;
+            case 'Photoshop' : 
             message = info
             break;
             default: null

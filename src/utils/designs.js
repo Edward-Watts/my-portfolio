@@ -2,102 +2,102 @@ let flyers =[
     {
         name: 'My World',
         photo: 'flyers/myworld.png',
-        info: ''
+        info: null
     },
     {
         name: 'Thanksgiving',
         photo: 'flyers/reg-con.jpg',
-        info: ''
+        info: null
     },
     {
         name: 'Family',
         photo: 'flyers/family.png',
-        info: ''
+        info: null
     },
     {
         name: 'Qinnect Pro',
         photo: 'flyers/qinnect.jpg',
-        info: ''
+        info: null
     },
     {
         name: 'Music School',
         photo: 'flyers/music.png',
-        info: ''
+        info: null
     },
      {
         name: 'Singles Mingle',
         photo: 'flyers/singles.jpg',
-        info: ''
+        info: null
     },
      {
         name: 'Mango Haven',
         photo: 'flyers/justfruits.png',
-        info: ''
+        info: null
     },
     {
         name: 'Pineapple Royale',
         photo: 'flyers/justfruits1.png',
-        info: ''
+        info: null
     },
     {
         name: 'AssistCon',
         photo: 'flyers/assistcon.png',
-        info: ''
+        info: null
     },
     {
         name: 'GH-frantoma',
         photo: 'flyers/gh-frantoma.png',
-        info: ''
+        info: null
     },
     {
         name: 'Tsalach',
         photo: 'flyers/tsalach.jpg',
-        info: ''
+        info: null
     },
     {
         name: 'Unnlimited Solutions',
         photo: 'flyers/unlimited.png',
-        info: ''
+        info: null
     },
     {
         name: 'Ackah Klodin',
         photo: 'flyers/ackah.png',
-        info: ''
+        info: null
     },
     {
         name: 'AssistCon Logo',
         photo: 'flyers/assistcon-logo.png',
-        info: ''
+        info: null
     },
     {
         name: 'Ankin Apparel',
         photo: 'flyers/ankin.png',
-        info: ''
+        info: null
     },
     {
         name: 'GH-frantoma Logo',
         photo: 'flyers/gh-frantoma-logo.png',
-        info: ''
+        info: null
     },
     {
         name: 'Noboa Foundation',
         photo: 'flyers/noboa.jpg',
-        info: ''
+        info: null
     },
     {
         name: "Papa's Kitchen",
         photo: 'flyers/papa.png',
-        info: ''
+        info: null
     },
     {
         name: 'TicketInn',
         photo: 'flyers/ticketinn.png',
-        info: ''
+        info: null
     },
     {
         name: 'Nii Photography',
         photo: 'flyers/niiphotography.png',
-        info: ''
+        info: null
     }
 ]
 

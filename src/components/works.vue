@@ -16,9 +16,14 @@
     </div>
     <div class="design-container px-4 d-flex justify-content-center align-items-center" style="flex-wrap: wrap;">
         <div 
-            class="designs mx-2"
+            :class="designs"
             v-for="el in data" :key="el.name">
-          <img :src="require('../assets/works/' + el.photo)" />
+          <img :src="require('../assets/works/' + el.photo)"/>
+          <b-link 
+          v-if="webapp"
+          :href="el.link"
+          target="blank" 
+          style="text-decoration: none; color: #0dcaf0;">{{ el.info }}</b-link>
         </div>
     </div> 
   </div>  
@@ -38,6 +43,7 @@ export default {
     },
     data () {
       return {
+
     }
   },
   mounted () {
@@ -79,9 +85,28 @@ export default {
           return 'https://github.com/Edward-Watts'
         }
         return ''
+      },
+      designs () {
+         if (this.webapp) {
+          return 'designs-web'
+        }
+        return 'designs'
       }
-
+      // info () {
+      //    this.data.forEach((el) => {
+      //       console.log(el.completed)
+      //       this.completed.push(el.completed)
+      //     })
+      //   if (this.webapp || this.completed) {
+      //     console.log(this.completed)
+      //     return 'View on Netlify'
+      //   } else if (this.webapp && !this.completed) {
+      //     return 'Pending completion'
+      //   }
+      //   return null
+      // }
     },
+
     methods: {
       showToast () {
         this.$toast.info('Please scroll down')
@@ -103,7 +128,13 @@ export default {
   .designs {
     height:300px;
     width: 300px;
-    margin-bottom: 20px;
     text-align: center;
+    margin: 10px;
+  }
+  .designs-web {
+    height:300px;
+    width: 300px;
+    text-align: center;
+    margin: 10px 10px 30px 10px;
   }
 </style>

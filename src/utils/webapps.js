@@ -1,28 +1,24 @@
 let webapps = [
     {
-        name: 'My World',
-        photo: 'flyers/myworld.png',
-        info: ''
+        name: 'Budgety',
+        photo: 'web/budgety.png',
+        info: 'View on Netlify',
+        link: 'https://www.budgety.com',
+        completed: true
     },
     {
-        name: 'Thanksgiving',
-        photo: 'flyers/reg-con.jpg',
-        info: ''
+        name: 'Burgera',
+        photo: 'web/burgera.png',
+        info: 'View on Netlify',
+        link: 'https://www.burgera.com',
+        completed: true
     },
     {
-        name: 'Family',
-        photo: 'flyers/family.png',
-        info: ''
-    },
-    {
-        name: 'Qinnect Pro',
-        photo: 'flyers/qinnect.jpg',
-        info: ''
-    },
-    {
-        name: 'Music School',
-        photo: 'flyers/music.png',
-        info: ''
+        name: 'pam',
+        photo: 'web/pam.png',
+        info: 'Pending completion',
+        link: '',
+        completed: false
     }
 ]
 
