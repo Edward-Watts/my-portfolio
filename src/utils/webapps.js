@@ -3,7 +3,7 @@ let webapps = [
         name: 'Budgety',
         photo: 'web/budgety.png',
         info: 'View on Netlify',
-        link: 'https://www.budgety.com',
+        link: 'https://dazzling-engelbart-ffc199.netlify.app/',
         completed: true
     },
     {

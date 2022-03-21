@@ -69,7 +69,7 @@
             <div class="text"> 
               <p>
                 Here are some presentation of my projects (WebApps, UI Designs and Graphic Designs respectively) to explore. 
-                Don't hesitate to send in your <b-link href="/contacts" style="text-decoration: none; color: #0dcaf0;">comments</b-link>. 
+                Don't hesitate to send in your <b-link href="#contacts" style="text-decoration: none; color: #0dcaf0;">comments</b-link>. 
               </p>
             </div>
           </div>
