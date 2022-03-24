@@ -55,10 +55,10 @@ export default {
           return 'Flyers & Logos'
         }
         if (this.ui) {
-          return 'User Interface Design'
+          return 'UI Designs'
         }
          if (this.webapp) {
-          return 'Web Applications'
+          return 'Web Apps'
         }
         return ''
       },
@@ -92,19 +92,6 @@ export default {
         }
         return 'designs'
       }
-      // info () {
-      //    this.data.forEach((el) => {
-      //       console.log(el.completed)
-      //       this.completed.push(el.completed)
-      //     })
-      //   if (this.webapp || this.completed) {
-      //     console.log(this.completed)
-      //     return 'View on Netlify'
-      //   } else if (this.webapp && !this.completed) {
-      //     return 'Pending completion'
-      //   }
-      //   return null
-      // }
     },
 
     methods: {
@@ -137,4 +124,23 @@ export default {
     text-align: center;
     margin: 10px 10px 30px 10px;
   }
+
+  @media (max-width: 620.98px) {
+  .title-sec {
+    font-size: 3.5rem;
+    margin-bottom: -5px;
+    line-height: 110px;
+  }
+}
+
+@media (max-width: 765.98px) {
+  .designs {
+    height:180px;
+    width: 180px;
+  }
+  .designs-web {
+    height:180px;
+    width: 180px;
+  }
+}
 </style>

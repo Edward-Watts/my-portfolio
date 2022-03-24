@@ -6,6 +6,5 @@ var myStacks = stacks
 
 export const getStacks = async() => {
     const res = await Promisify(myStacks)
-    console.log(res)
     return res
 }

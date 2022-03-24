@@ -76,8 +76,6 @@ export default {
       }
     },
     handleSubmit() {
-        console.log('okay I am working')
-        console.log(this.stacks)
         this.$refs.messageValidation.validate().then((success) => {
           if (success) {
             const newVisitor= {
@@ -91,8 +89,6 @@ export default {
             // this.show = true
             // this.variant = 'success'
             // this.alert = 'Message sent successfully'
-            console.log(newVisitor)
-            console.log(visitorsArr)
             }
           } else {
             this.$toast.error('Please fill required fields')

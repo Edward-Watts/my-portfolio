@@ -50,7 +50,7 @@
                 new ways to get better.
               </p>
               <p>
-                Resourceful, a problem solver, collaborative and caring employee. I love music, movies and cooking. 
+                I am a resourceful, a problem solver, collaborative and caring employee. I love music, movies and cooking. 
               </p>
             </div>
             <Stack />
@@ -68,7 +68,7 @@
             <div class="title-sec" style="color: #0dcaf0;">What I do.</div>
             <div class="text"> 
               <p>
-                Here are some presentation of my projects (WebApps, UI Designs and Graphic Designs respectively) to explore. 
+                Here are some presentation of my projects (Web Apps, UI Designs and Graphic Designs respectively) to explore. 
                 Don't hesitate to send in your <b-link href="#contacts" style="text-decoration: none; color: #0dcaf0;">comments</b-link>. 
               </p>
             </div>
@@ -216,7 +216,6 @@
         this.flyer = false
         if (this.ui) {
           this.data = this.userInterfaces
-          console.log(this.data)
         }
       },
       showWeb () {
@@ -242,13 +241,6 @@
   img {
     width: inherit;
     border-radius: 10px;
-  }
-  .designs {
-    height:300px;
-    width: 300px;
-    margin-bottom: 20px;
-    text-align: center;
-    transition: 0.4s all ease;
   }
   .section {
     display: block;
@@ -339,19 +331,7 @@
     background-image: url(../../assets/background/setup01.png);
     background-size: cover;
   }
-  #about {
-    background: #202020;
-  }
-  #works {
-    background: #202020;
-  }
-  #contacts {
-    background: #202020;
-  }
-  .footer {
-    background: #202020;
-  }
-  
+
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -361,5 +341,35 @@
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+@media (max-width: 765.98px) {
+  
+  .title {
+    line-height: 100px;
+    font-size: 4rem;
+    padding-top: 90px;
+  }
+   .subtitle {
+    font-size: 2rem;
+  }
+  .pic {
+    height:200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 620.98px) {
+  
+  .title {
+    font-size: 3.1rem;
+  }
+   .subtitle {
+    font-size: 1.5rem;
+  }
+  .title-sec {
+    font-size: 3.5rem;
+    margin-bottom: -10px;
+  }
 }
 </style>

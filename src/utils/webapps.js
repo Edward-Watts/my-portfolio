@@ -21,8 +21,8 @@ let webapps = [
         completed: false
     },
     {
-        name: 'Stockx',
-        photo: 'web/stockx.png',
+        name: 'Stockex',
+        photo: 'web/stockex.png',
         info: 'Pending completion',
         link: '',
         completed: false
