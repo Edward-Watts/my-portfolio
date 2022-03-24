@@ -10,7 +10,7 @@ let webapps = [
         name: 'Burgera',
         photo: 'web/burgera.png',
         info: 'View on Netlify',
-        link: 'https://www.burgera.com',
+        link: 'https://phenomenal-gaufre-0d0fd5.netlify.app/',
         completed: true
     },
     {
