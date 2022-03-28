@@ -280,13 +280,13 @@
     border-radius: 10px;
     margin-bottom: 20px;
     text-align: center;
-    opacity: 40%;
+    opacity: 0.4;
     cursor: pointer;
     transition: 0.4s all ease;
   }
 
   .pic:hover {
-     opacity: 100%;
+     opacity: 1;
      transition: 0.4s all ease;
      background-size: 115%;
      background-position: center;

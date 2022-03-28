@@ -36,10 +36,11 @@ export default {
     text-align: center;
     margin-right: 6px;
     margin-left: 6px;
-    opacity: 50%;
+    opacity: 0.5;
+    transition: 0.2s all ease;
   }
   .social:hover {
-    opacity: 100%;
+    opacity: 1;
     transition: 0.2s all ease;
   }
   #linkedin {

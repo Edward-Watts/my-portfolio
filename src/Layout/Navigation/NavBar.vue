@@ -36,7 +36,7 @@ export default {
 <style scoped>
 .nav-container {
   position: fixed;
-  opacity: 98%; 
+  opacity: 0.98; 
   top: 0; 
   width: 100%;
   z-index: 2;
