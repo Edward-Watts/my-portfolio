@@ -143,4 +143,19 @@ export default {
     width: 180px;
   }
 }
+
+@media (max-width: 360.98px) {
+  .designs {
+    height:250px;
+    width: 250px;
+  }
+  .designs-web {
+    height:250px;
+    width: 250px;
+  }
+  .title-sec {
+    font-size: 2.5rem;
+    margin-bottom: -20px;
+  }
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container">  
     <b-navbar class="py-0 px-2" toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#home" class="p-0 w-10">
+      <b-navbar-brand href="/" class="p-0 w-10">
         <img src="../../assets/logo/eddie-watts.png" style="width: 60px; margin-left:10px;" alt="Eddie-Codo">
       </b-navbar-brand>
 

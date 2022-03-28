@@ -28,8 +28,8 @@
             Download CV
           </b-btn>
         </div>
-        <div class="col-12 d-flex justify-content-center align-items-center" style="margin-top: 10%;">
-          <b-icon icon="chevron-double-down" animation="cylon-vertical" font-scale="2"></b-icon>
+        <div class="chevron col-12 d-flex justify-content-center align-items-center" style="margin-top: 10%;">
+          <b-icon icon="chevron-double-down" animation="cylon-vertical" font-scale="1.5"></b-icon>
         </div>
       </div>
     </section>
@@ -370,6 +370,30 @@
   .title-sec {
     font-size: 3.5rem;
     margin-bottom: -10px;
+  }
+}
+
+@media (max-width: 360.98px) {
+  .section {
+    padding-top: 0 !important;
+  }
+  .row {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .title {
+    font-size: 1.8rem;
+    margin-top: 20px !important;
+  }
+   .subtitle {
+    font-size: 1rem;
+  }
+  .title-sec {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  .chevron {
+    padding-top: 35%
   }
 }
 </style>
