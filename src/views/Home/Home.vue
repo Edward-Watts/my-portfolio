@@ -250,7 +250,7 @@
     position: relative;
     text-align: center;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4.8rem;
     margin-bottom: -20px;
   }
 
@@ -347,7 +347,7 @@
   
   .title {
     line-height: 100px;
-    font-size: 4rem;
+    font-size: 3.8rem;
     padding-top: 90px;
   }
    .subtitle {
@@ -362,7 +362,7 @@
 @media (max-width: 620.98px) {
   
   .title {
-    font-size: 3.1rem;
+    font-size: 2.8rem;
   }
    .subtitle {
     font-size: 1.5rem;
