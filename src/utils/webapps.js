@@ -16,14 +16,14 @@ let webapps = [
     {
         name: 'Pam',
         photo: 'web/pam.png',
-        info: 'Pending completion',
+        info: 'Pending',
         link: '',
         completed: false
     },
     {
         name: 'Stockex',
         photo: 'web/stockex.png',
-        info: 'Pending completion',
+        info: 'Pending',
         link: '',
         completed: false
     }
