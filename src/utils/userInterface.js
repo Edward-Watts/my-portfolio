@@ -1,32 +1,32 @@
 let ui =[
     {
         name: 'Papa',
-        photo: 'userInterface/papa.png',
+        photo: 'userInterface/papa.jpg',
         info: null
     },
     {
         name: 'Green House',
-        photo: 'userInterface/greenhouse.png',
+        photo: 'userInterface/greenhouse.jpg',
         info: null
     },
     {
         name: 'Whatsapp',
-        photo: 'userInterface/whatsapp.png',
+        photo: 'userInterface/whatsapp.jpg',
         info: null
     },
     {
         name: 'Assistcon',
-        photo: 'userInterface/assistcon.png',
+        photo: 'userInterface/assistcon.jpg',
         info: null
     },
     {
         name: 'Noboa',
-        photo: 'userInterface/noboa.png',
+        photo: 'userInterface/noboa.jpg',
         info: null
     },
     {
         name: 'Pam',
-        photo: 'userInterface/pam.png',
+        photo: 'userInterface/pamshe.jpg',
         info: null
     }
 ]

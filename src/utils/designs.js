@@ -1,7 +1,7 @@
 let flyers =[
     {
         name: 'My World',
-        photo: 'flyers/myworld.png',
+        photo: 'flyers/myworld.jpg',
         info: null
     },
     {
@@ -11,7 +11,7 @@ let flyers =[
     },
     {
         name: 'Family',
-        photo: 'flyers/family.png',
+        photo: 'flyers/family.jpg',
         info: null
     },
     {
@@ -21,7 +21,7 @@ let flyers =[
     },
     {
         name: 'Music School',
-        photo: 'flyers/music.png',
+        photo: 'flyers/music.jpg',
         info: null
     },
      {
@@ -31,52 +31,47 @@ let flyers =[
     },
      {
         name: 'Mango Haven',
-        photo: 'flyers/justfruits.png',
+        photo: 'flyers/justfruits.jpg',
         info: null
     },
     {
         name: 'Pineapple Royale',
-        photo: 'flyers/justfruits1.png',
+        photo: 'flyers/justfruits1.jpg',
         info: null
     },
     {
         name: 'AssistCon',
-        photo: 'flyers/assistcon.png',
+        photo: 'flyers/assistcon.jpg',
         info: null
     },
     {
         name: 'GH-frantoma',
-        photo: 'flyers/gh-frantoma.png',
-        info: null
-    },
-    {
-        name: 'Tsalach',
-        photo: 'flyers/tsalach.jpg',
+        photo: 'flyers/gh-frantoma.jpg',
         info: null
     },
     {
         name: 'Unnlimited Solutions',
-        photo: 'flyers/unlimited.png',
+        photo: 'flyers/unlimited.jpg',
         info: null
     },
     {
         name: 'Ackah Klodin',
-        photo: 'flyers/ackah.png',
+        photo: 'flyers/ackah.jpg',
         info: null
     },
     {
         name: 'AssistCon Logo',
-        photo: 'flyers/assistcon-logo.png',
+        photo: 'flyers/assistcon-logo.jpg',
         info: null
     },
     {
         name: 'Ankin Apparel',
-        photo: 'flyers/ankin.png',
+        photo: 'flyers/ankin.jpg',
         info: null
     },
     {
         name: 'GH-frantoma Logo',
-        photo: 'flyers/gh-frantoma-logo.png',
+        photo: 'flyers/gh-frantoma-logo.jpg',
         info: null
     },
     {
@@ -85,18 +80,23 @@ let flyers =[
         info: null
     },
     {
+        name: 'Green House',
+        photo: 'flyers/greenhouse.png',
+        info: null
+    },
+    {
         name: "Papa's Kitchen",
-        photo: 'flyers/papa.png',
+        photo: 'flyers/papa.jpg',
         info: null
     },
     {
         name: 'TicketInn',
-        photo: 'flyers/ticketinn.png',
+        photo: 'flyers/ticketinn.jpg',
         info: null
     },
     {
         name: 'Nii Photography',
-        photo: 'flyers/niiphotography.png',
+        photo: 'flyers/niiphotography.jpg',
         info: null
     }
 ]
