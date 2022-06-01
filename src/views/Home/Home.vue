@@ -40,17 +40,17 @@
             <div class="title-sec" style="color: #0dcaf0;">Who I am.</div>
             <div class="text">
               <p>
-                As a graphic design ethusiast my interest for web development began during and on completion of my first project  
+                As a graphic design ethusiast my interest for web development began during my first courseware project
                 using just HTML and CSS. The entire experience was amazing and ever since I've strived to improve my skills and 
-                knowledge of frontend programming.
+                knowledge of frontend web development.
               </p>
               <p>
-                I've had the opportunity to meet and work with incredible people and interesting web technologies
-                during my period of studies and projects development. I love what I do as a frontend developer and I am constantly learning 
+                I've had the opportunity to meet and work with incredible people and use interesting web technologies
+                during my period of studies and project works. I love what I do as a frontend developer and I am constantly learning 
                 new ways to get better.
               </p>
               <p>
-                I am a resourceful, a problem solver, collaborative and caring employee. I love music, movies and cooking. 
+                I am a resourceful, a problem solver, collaborative and caring employee. I love music and movies. 
               </p>
             </div>
             <Stack />
@@ -108,9 +108,6 @@
                 I'm Currently open to work and interested in a part-time, full-time and contract jobs
                 in a remote or office conditions. However, if you have other request or question, feel
                 free to put in the mail.
-              </p>
-              <p>
-                I will love to hear from you!
               </p>
               <b-btn 
               variant="outline-info" 
