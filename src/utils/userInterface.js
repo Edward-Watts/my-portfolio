@@ -1,5 +1,20 @@
 let ui =[
     {
+        name: 'Zooish UI',
+        photo: 'userInterface/zooish-ui.jpg',
+        info: null
+    },
+    {
+        name: 'Zooish',
+        photo: 'userInterface/zooish-mobile.jpg',
+        info: null
+    },
+    {
+        name: 'Zooish Tools',
+        photo: 'userInterface/zooish-tools.jpg',
+        info: null
+    },
+    {
         name: 'Papa',
         photo: 'userInterface/papa.jpg',
         info: null
