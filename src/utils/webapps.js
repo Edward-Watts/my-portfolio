@@ -2,14 +2,14 @@ let webapps = [
     {
         name: 'Budgety',
         photo: 'web/budgety.jpg',
-        info: 'View on Netlify',
+        info: 'View',
         link: 'https://dazzling-engelbart-ffc199.netlify.app/',
         completed: true
     },
     {
         name: 'Burgera',
         photo: 'web/burgera.jpg',
-        info: 'View on Netlify',
+        info: 'View',
         link: 'https://phenomenal-gaufre-0d0fd5.netlify.app/',
         completed: true
     },
