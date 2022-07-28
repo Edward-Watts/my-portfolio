@@ -1,5 +1,20 @@
 let ui =[
     {
+        name: "FurnO",
+        photo: "userInterface/furnO.jpg",
+        info: null
+    },
+    {
+        name: "FurnO-share",
+        photo: "userInterface/furnO-share.jpg",
+        info: null
+    },
+    {
+        name: "FurnO-share-1",
+        photo: "userInterface/furnO-share-1.jpg",
+        info: null
+    },
+    {
         name: "Papa's",
         photo: "userInterface/papa's.jpg",
         info: null
