@@ -76,7 +76,7 @@ export default {
       },
       link () {
         if (this.flyer) {
-          return 'https://www.instagram.com/edwardwattsadjei/'
+          return 'https://www.instagram.com/grafix.eddie/'
         }
         if (this.ui) {
           return 'https://dribbble.com/Eddie_Watts'
