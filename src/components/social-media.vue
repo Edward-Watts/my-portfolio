@@ -8,7 +8,7 @@
         <div class="social" id="github" v-b-tooltip.hover title="GitHub"></div></b-link>
         <b-link href="https://dribbble.com/Eddie_Watts" target="blank">
         <div class="social" id="dribbble" v-b-tooltip.hover title="Dribbble"></div></b-link>
-        <b-link href="https://www.instagram.com/edwardwattsadjei/" target="blank">
+        <b-link href="https://www.instagram.com/ui.eddie/" target="blank">
         <div class="social" id="instagram" v-b-tooltip.hover title="Instagram"></div></b-link>
     </div>  
   </div>  
